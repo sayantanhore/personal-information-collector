@@ -1,0 +1,42 @@
+.div__card {
+  width: 80%;
+  margin: 1rem auto;
+  border: 1px solid;
+  border-radius: 3px;
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  .div__card__clip {
+    display: inline-block;
+    background-color: rgb(2, 204, 186);
+    color: #FFF;
+    font-size: 11px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    margin-top: 0.7rem;
+    margin-left: -1rem;
+  }
+  .div__card__content {
+    width: 90%;
+    margin: 1rem auto;
+    .div__card__content__pageheading {
+      margin: 1.5rem 0;
+      color: rgb(46, 61, 73);
+      font-size: 24px;
+      font-weight: 300;
+    }
+    .div__card__content__body {
+      font-size: 13px;
+      font-weight: 400;
+      color: rgb(82, 92, 101);
+      line-height: 24px;
+    }
+    .div__card__content__heading {
+      margin: 1.5rem 0 1rem 0;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: rgb(125, 151, 173);
+    }
+  }
+}
