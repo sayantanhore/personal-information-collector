@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import FilteredItems from './FilteredItems';
 import $ from 'jquery';
 require('./FilterList.scss');
 let close = '../../../icons/error.svg';
@@ -7,6 +8,7 @@ let close = '../../../icons/error.svg';
 export default class FilterList extends Component {
   constructor() {
     super();
+    this.lastChosenItem = null;
     this.state = {
       highlighted: null
     };
@@ -35,6 +37,7 @@ export default class FilterList extends Component {
         }
       });
     }
+    this.lastChosenItem = null;
   }
 
   searchHandler(event) {
@@ -55,9 +58,12 @@ export default class FilterList extends Component {
   selectItemOnEnter(event) {
     if(event.keyCode === 13) {
       if(this.state.highlighted !== null) {
+        /*
         $(ReactDOM.findDOMNode(this.refs.selectedItemsContainer)).append(
           '<div>' + this.state.highlighted + '<span>X</span></div>'
         );
+        */
+        this.lastChosenItem = this.state.highlighted;
         this.setState({highlighted: null});
       }
       $(event.target).val('');
@@ -84,9 +90,7 @@ export default class FilterList extends Component {
             </ul>
           </div>
         </div>
-        <div ref="selectedItemsContainer" className="div__output-box">
-
-        </div>
+        <FilteredItems chosenItem={this.lastChosenItem}/>
       </div>
     );
   }
