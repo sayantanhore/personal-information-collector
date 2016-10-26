@@ -1,5 +1,5 @@
 .div__card {
-  width: 80%;
+  width: 100%;
   margin: 1rem auto;
   border: 1px solid;
   border-radius: 3px;
@@ -7,7 +7,8 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   .div__card__clip {
     display: inline-block;
-    background-color: rgb(2, 204, 186);
+    //background-color: rgb(2, 204, 186);
+    background-color: rgb(24, 146, 243);
     color: #FFF;
     font-size: 11px;
     letter-spacing: 1.3px;
@@ -31,12 +32,31 @@
       color: rgb(82, 92, 101);
       line-height: 24px;
     }
+    .div__card__content__input {
+      margin: 0.5rem 0;
+      width: 20rem;
+      font-size: 13px;
+      font-weight: 400;
+      color: rgb(82, 92, 101);
+      line-height: 24px;
+      outline: none;
+      border-width: 0 0 1px 0;
+    }
+    .div__card__content__label {
+      font-size: 13px;
+      font-weight: 400;
+      color: rgb(82, 92, 101);
+      line-height: 13px;
+    }
     .div__card__content__heading {
-      margin: 1.5rem 0 1rem 0;
+      margin: 1rem 0 0.5rem 0;
       text-transform: uppercase;
       font-size: 13px;
       letter-spacing: 2px;
       color: rgb(125, 151, 173);
+      input[type=text] {
+        margin: 0.5rem 0;
+      }
     }
   }
 }
