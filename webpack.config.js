@@ -1,4 +1,8 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
+const PATHS = {
+  icons: path.join(__dirname, 'icons')
+};
 module.exports = {
   entry: "./src/app.js",
   output: {path: __dirname, filename: './dist/bundle.js'},
@@ -17,6 +21,10 @@ module.exports = {
     }, {
       test: /.scss$/,
       loaders: ['style-loader', 'css-loader', 'sass-loader']
+    }, {
+      test: /.svg$/,
+      loader: 'file',
+      include: PATHS.icons
     }]
   },
   plugins: [

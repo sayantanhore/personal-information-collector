@@ -1,0 +1,35 @@
+.div__checkbox--container {
+  margin: 0.6rem;
+  .checkbox {
+    margin-right: 0.8rem;
+    height: 13px;
+  }
+  input[type=checkbox] {
+    display: none;
+  }
+  input[type=checkbox]:checked + .label__checkbox:before {
+    content: "\2713";
+    font-size: 13px;
+  }
+  .label__checkbox {
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(82, 92, 101, 0.8);
+    vertical-align: middle;
+  }
+  .label__checkbox:before {
+    margin-right: 0.5rem;
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    vertical-align: middle;
+    color: rgba(82, 92, 101, 0.5);
+    text-align: center;
+    border: 1px solid;
+    border-radius: 0px;
+  }
+}
+

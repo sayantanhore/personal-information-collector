@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import Card from './Card';
+import Page from './Page';
 require('./app.scss');
 
-ReactDOM.render(<Card/>, document.getElementById('container'));
+ReactDOM.render(<Page/>, document.getElementById('container'));
