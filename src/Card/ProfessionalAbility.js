@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import CheckBox from '../Components/CheckBox';
 import FilterList from '../Components/FilterList';
+import Dropdown from '../Components/Dropdown';
 import {store} from '../store';
 require('./Card.scss');
 
@@ -30,6 +31,37 @@ export default class ProfessionalAbility extends Component {
           <div className="div__card__content__heading">Choose the top 5 strongest abilities from the list below</div>
             <FilterList items={store.list}/>
           <div className="div__card__content__heading">Choose the top 5 areas that you follow</div>
+            <FilterList items={store.list}/>
+          <div className="div__card__content__heading">Choose 5 professionals you admire</div>
+            <input type="text" placeholder="Name" className="div__card__content__input"></input>
+            <Dropdown items={store.list} placeholder="Select a skill for the above person"/>
+            <textarea className="textarea__longtext" placeholder="About the above person"></textarea>
+
+            <input type="text" placeholder="Name" className="div__card__content__input"></input>
+            <Dropdown items={store.list} placeholder="Select a skill for the above person"/>
+            <textarea className="textarea__longtext" placeholder="About the above person"></textarea>
+
+            <input type="text" placeholder="Name" className="div__card__content__input"></input>
+            <Dropdown items={store.list} placeholder="Select a skill for the above person"/>
+            <textarea className="textarea__longtext" placeholder="About the above person"></textarea>
+
+            <input type="text" placeholder="Name" className="div__card__content__input"></input>
+            <Dropdown items={store.list} placeholder="Select a skill for the above person"/>
+            <textarea className="textarea__longtext" placeholder="About the above person"></textarea>
+
+            <input type="text" placeholder="Name" className="div__card__content__input"></input>
+            <Dropdown items={store.list} placeholder="Select a skill for the above person"/>
+            <textarea className="textarea__longtext" placeholder="About the above person"></textarea>
+
+          <div className="div__card__content__heading">Choose 3 book geners and number of books in each genre you read</div>
+            <Dropdown items={store.list} placeholder="Select a genre"/>
+            <input type="text" placeholder="Number of books from the above genre" className="div__card__content__input"></input>
+
+            <Dropdown items={store.list} placeholder="Select a genre"/>
+            <input type="text" placeholder="Number of books from the above genre" className="div__card__content__input"></input>
+
+            <Dropdown items={store.list} placeholder="Select a genre"/>
+            <input type="text" placeholder="Number of books from the above genre" className="div__card__content__input"></input>
         </div>
       </div>
     );
