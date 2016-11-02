@@ -11,9 +11,11 @@ export default class Dropdown extends Component {
       highlighted: null
     };
     this.showList = this.showList.bind(this);
+    this.hideList = this.hideList.bind(this);
     this.searchHandler = this.searchHandler.bind(this);
     this.clearSearch = this.clearSearch.bind(this);
-    this.checkForESC = this.checkForESC.bind(this);
+    this.checkForESCOrEnter = this.checkForESCOrEnter.bind(this);
+    this.chooseItem = this.chooseItem.bind(this);
   }
 
   componentDidUpdate() {
@@ -35,21 +37,24 @@ export default class Dropdown extends Component {
 
   }
 
+  hideList(event) {
+    console.log(22222222)
+    this.setState({listVisible: false});
+  }
+
   showList(event) {
     this.setState({listVisible: true});
   }
 
   clearSearch(event, found) {
+    console.log(12121212)
     if(!found) {
       $(event.target).val('');
-      this.setState({listVisible: false});
     }
-    else {
-      this.setState({listVisible: false});
-    }
+    this.setState({listVisible: false, highlighted: found});
   }
 
-  checkForESC(event) {
+  checkForESCOrEnter(event) {
     if(event.keyCode === 27) {
       this.clearSearch(event, false);
     }
@@ -81,17 +86,26 @@ export default class Dropdown extends Component {
     });
   }
 
+  chooseItem(event) {
+    console.log(1111111)
+    $(this.refs.searchinput).val($(event.target).text());
+    const searchFor = $(event.target).text();
+    this.setState({listVisible: false, highlighted: searchFor});
+  }
+
   render() {
     return (
-      <div className="div__dropdown-list">
-        <div className="div__search-box">
+      <div className="div__dropdown-list" >
+        <div
+          className="div__search-box"
+          onClick={this.hideList}>
           <input type="text"
+            ref="searchinput"
             placeholder={this.props.placeholder}
             className="input-text__search"
             onClick={this.showList}
             onChange={this.searchHandler}
-            onKeyDown={this.checkForESC}
-            onBlur={this.clearSearch}
+            onKeyDown={this.checkForESCOrEnter}
             />
           <div ref="searchListContainer" className={this.state.listVisible ? "div__search-list" : "div__search-list hidden"}>
             <ul ref="itemList">

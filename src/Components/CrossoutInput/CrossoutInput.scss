@@ -1,0 +1,16 @@
+.span__crossout-controller {
+  border: 0px solid;
+  margin: 0 0.5rem 0 0;
+  padding: 0 0.2rem;
+  color: rgb(82, 92, 101);
+  cursor: pointer;
+  opacity: 0.2;
+  &.crossout {
+    color: red;
+    opacity: 1.0;
+  }
+}
+
+.div__card__content__input.crossout {
+  text-decoration: line-through;
+}
