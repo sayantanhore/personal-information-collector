@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
+import Header from '../Components/Header';
 import PersonalInfo from '../Card/PersonalInfo';
 import ProfessionalAbility from '../Card/ProfessionalAbility';
 require('./Page.scss');
@@ -13,9 +13,10 @@ export default class Page extends Component {
   render() {
     return (
       <div className="div__page">
-        <img className="img__icon--navigation" src={backward}/>
-        <ProfessionalAbility/>
-        <img className="img__icon--navigation" src={forward}/>
+        <Header/>
+        <div className="div__card-holder">
+          <PersonalInfo/>
+        </div>
       </div>
     );
   }

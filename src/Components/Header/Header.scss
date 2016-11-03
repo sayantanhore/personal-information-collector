@@ -1,0 +1,40 @@
+$page-header-color: rgba(247, 247, 247, 0.2);
+
+.div__page-header {
+  width: 100%;
+  background-color: $page-header-color;
+  height: 3rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: rgb(39, 147, 199);
+  font-size: 14px;
+  letter-spacing: 3px;
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  .div__page-header__title {
+    width: 50%;
+    border: 0px solid;
+    margin: 0 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+  .div__page-header__actions {
+    width: 50%;
+    border: 0px solid;
+    margin: 0 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    span {
+      margin: 0 0.5rem;
+      cursor: pointer;
+    }
+  }
+}
