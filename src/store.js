@@ -9,6 +9,8 @@ export const store = {
   },
   professionalBooks: {
     noOfBooks: 3
-  }
+  },
+  activePage: 'PersonalInfo',
+  pages: ['PersonalInfo', 'ProfessionalAbility']
 }
 
