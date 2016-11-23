@@ -35,6 +35,7 @@
           &.highlight {
             color: blue;
           }
+          cursor: pointer;
         }
       }
     }
@@ -52,7 +53,7 @@
       margin: auto;
       margin: 0.2rem 0;
     }
-    span {
+    span.span__close-button {
       margin: 0 1rem;
       padding: 0rem 0.2rem;
       font-size: 0.7rem;
