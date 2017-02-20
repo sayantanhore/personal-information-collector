@@ -20,6 +20,9 @@ export default class Dropdown extends Component {
   }
 
   hideList() {
+    if(this.props.onSelectGenre) {
+      this.props.onSelectGenre($(this.refs.searchinput).val());
+    }
     this.setState({listVisible: false});
   }
 
@@ -107,14 +110,14 @@ export default class Dropdown extends Component {
             onBlur={this.lostFocusHandler} />
           <div ref="searchListContainer" className={this.state.listVisible ? "div__search-list" : "div__search-list hidden"}>
             <ul ref="itemList">
-              {this.props.items.map((item, index) => {
+              {this.props.items ? this.props.items.map((item, index) => {
                 if(this.state.highlighted === item) {
                   return <li key={index} className="highlight" onMouseDown={this.selectItemFromMenu}>{item}</li>
                 }
                 else {
                   return <li key={index} onMouseDown={this.selectItemFromMenu}>{item}</li>
                 }
-              })}
+              }): <li></li>}
             </ul>
           </div>
         </div>

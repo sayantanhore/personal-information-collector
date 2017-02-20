@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import Header from '../Components/Header';
 import PersonalInfo from '../Card/PersonalInfo';
 import ProfessionalAbility from '../Card/ProfessionalAbility';
+import $ from 'jquery';
+
 require('./Page.scss');
 let backward = '../../icons/backward.svg';
 let forward = '../../icons/forward.svg';

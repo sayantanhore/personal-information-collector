@@ -5,6 +5,8 @@ import CheckBox from '../Components/CheckBox';
 import FilterList from '../Components/FilterList';
 import Dropdown from '../Components/Dropdown';
 import CrossoutInput from '../Components/CrossoutInput';
+import Books from '../Components/Books';
+import Book from '../Components/Book';
 import {store} from '../store';
 require('./Card.scss');
 
@@ -35,7 +37,7 @@ export default class ProfessionalAbility extends Component {
           <div className="div__card__content__heading">Choose the top 5 strongest abilities from the list below</div>
             <FilterList items={store.list}/>
           <div className="div__card__content__heading">Choose the top 5 areas that you follow</div>
-            <FilterList items={store.list}/>
+            <FilterList items={_.keys(store.spheres)}/>
 
           <div className="div__card__content__heading">Choose 5 professionals you admire</div>
             {
@@ -49,16 +51,7 @@ export default class ProfessionalAbility extends Component {
                 )
               })
             }
-
-          <div className="div__card__content__heading">Choose 3 book geners and number of books in each genre you read</div>
-            {this.state.professionalBooks.map((book, index) => {
-              return (
-                <div key={index}>
-                  <Dropdown items={store.list} placeholder={book + ": Select a genre"}/>
-                  <input type="text" placeholder="Number of books from the above genre" className="div__card__content__input"></input>
-                </div>
-              )
-            })}
+          <Books books={this.state.professionalBooks}/>
         </div>
       </div>
     );

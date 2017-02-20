@@ -1,0 +1,28 @@
+1, Accounting: Accounting, Banking\
+2, Administrative: Civic & Social Organization, Government Administration, Government Relations, International Affairs, International Trade and Development \
+3, Arts and Design: Animation, Apparel & Fashion, Glass & Ceramics & Concrete, Architecture & Planning, Arts and Crafts, Design, Fine Art, Graphics Design, Motion Pictures and Film, Museums and Institutions, Music, Performing Arts, Photography, Writing and Editing\
+4, Business Development: Business Supplies and Equipment, Capital Markets\
+5, Community & Social Services: Civic & Social Organization, Environmental Services, Hospitality, Events Services, Facilities Services, Food & Beverage, Food Production, Individual and Family Services, Information Services, Leisure, Travel & Tourism, Libraries, Political Organization, Recreational Facilities and Services, Religious Institutions, Reneweables & Environment, Translation and Localization, Think Tanks\
+6, Consulting: Alternative Dispute Resolution, Management Consulting, Professional Training & Coaching\
+7, Education: E-Learning, Higher Education, Libraries, Primary/Secondary Education\
+8, Engineering: Architecture & Planning, Automotive, Building Materials, Civil Engineering, Computer Hardware, Construction, Electrical/Electronic Manufacturing, Machinery, Mechanical or Industrial Engineering, Mining & Metals, Nanotechnology, Oil & Energy, Shipbuilding, Telecommunications\
+9, Entrepreneurship: \
+10, Finance: Capital Markets, Financial Services, Fund-raising, Insurance, International Trade and Development, Investment Banking, Investment Management, Market Search, Venture Capital & Private Equity\
+11, Healthcare Services: Alternative Medicine, Biotechnology, Cosmetics, Health, Wellness and Fitness, Hospital & Health Care, Medical Devices, Medical Practice, Mental Health Care, Pharmaceuticals, Veterinary\
+12, Human Resources: Human Resources, Logistics, Staffing and Recruiting\
+13, Information Technology: Bioinformatics, Computer & Network Security, Computer Software, Information Services, Information Technology, Internet, Wireless\
+14, Legal: Alternative Dispute Resolution, Judiciary, Law Enforcement, Law Practice, Legal Services, Legislative Office\
+15, Marketing: Broadcast Media, Internet, Logistics, Market Search, Marketing and Advertising\
+16, Media & Communications: Entertainment, Internet, Media Production, Newspapers, Online Media, Printing, Telecommunications, Writing and Editing\
+17, Military & Protective Services: Airlines/Aviation, Aviation & Aerospace, Defense & Space, Judiciary, Law Enforcement, Military, Security and Investigations \
+18, Operations: \
+19, Product Management: Industrial Automation, Oursorcing/Offshoring, Program Development\
+20, Program & Product Management: Biotechnology, Computer & Network Security, Computer Games, Computer Networking, Computer Software\
+21, Purchasing: furniture, import and export, Luxury Goods & Jewellery, Retail, Wholesale\
+22, Quality Assurance:\
+23, Real Estate: Architecture & Planning, Building Materials, Commercial Real Estate, Real Estate\
+24, Research: Research\
+25, Sales:  Consumer Electronics, Consumer Goods, Consumer Services, Sporting Goods, Wine and Spirits\
+26, Support: Translation and Localization, Transportation/Trucking/Railroad\
+27, Agro: Farming, Fishery, Paper & Forest Products, Ranching, Renewables & Environment\
+28, Sports: Sports
